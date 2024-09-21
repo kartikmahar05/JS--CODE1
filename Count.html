@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="decrement()">-</button>
+    <h1>1</h1>
+    <button onclick="increment()">+</button>
+</body>
+<script>
+    decrement=()=>{
+        let a=document.querySelector("h1").innerText;
+        
+        if(a<=0){
+            document.querySelector("h1").innerText=0
+        }else{
+            let b=Number.parseInt(a)-1
+            document.querySelector("h1").innerText=b
+        }
+        document.querySelector("h1").innerText=b;
+    }
+    increment=()=>{
+        let a=document.querySelector("h1").innerText;
+        let b=Number.parseInt(a)+1
+        document.querySelector("h1").innerText=b;
+    }
+</script>
+</html>
